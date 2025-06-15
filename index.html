@@ -3,34 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>400 Bad Request - Privacy Policy Missing</title>
+    <title>Optic Flow Studios - James Theakston: Extensions Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+            color: #334155; /* Tailwind's slate-700 */
         }
-        h1 {
-            color: #cc0000;
+        .section-padding {
+            padding: 4rem 1rem; /* Equivalent to py-16 px-4 */
         }
-        p {
-            margin-top: 20px;
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem; /* Equivalent to md:py-24 md:px-8 */
+            }
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        /* Styling for the badge, now inline and centered */
+        .best-extension-badge {
+            background-color: #ef4444; /* Tailwind's red-500 */
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px; /* Full rounded */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
         }
     </style>
 </head>
-<body>
-    <h1>400 Bad Request</h1>
-    <p>We're sorry, but the request could not be understood by the server due to malformed syntax.</p>
-    <p>To view the privacy policy, please ensure you are using the correct URL format, for example: <code>/privacy/[YOUR_EXTENSION_NAME]</code>.</p>
-    <p>If you believe this is an error, please <a href="/">return to the homepage</a> or contact support.</p>
+<body class="antialiased">
+
+    <!-- Extensions Section -->
+    <section class="section-padding bg-white rounded-lg mx-4 mt-8 md:mx-auto max-w-7xl shadow-xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Chrome Web Extensions and Themes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Extension Card 1: FocusList (formerly Secure Surfer) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">FocusList</h3>
+                    <p class="text-gray-700 mb-6">A simple to-do list to help you focus on your daily tasks.</p>
+                    <a href="https://chromewebstore.google.com/detail/mgkcenigjckbibdpjfadmpbakigeiagi?utm_source=item-share-cb" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center" target="_blank" rel="noopener noreferrer">
+                        Get Now
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Extension Card 2: HighlightCursor (middle) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2 relative">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">HighlightCursor</h3>
+                    <p class="text-gray-700 mb-6">Make your mouse cursor stand out with a customizable highlight, perfect for presentations, tutorials, or improved visibility.</p>
+                    <div class="flex flex-col items-center mt-4">
+                        <a href="https://highlightcursor.github.io/" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center mb-2" target="_blank" rel="noopener noreferrer">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                        <span class="best-extension-badge">⭐ Best Extension!</span>
+                    </div>
+                </div>
+
+                <!-- Extension Card 3: MidnightMode (formerly Developer Tools Companion) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">MidnightMode</h3>
+                    <p class="text-gray-700 mb-6">A truly black UI theme for Chrome. Dark Mode Reimagined - Only relying on colours. Midnight Mode is completely black. #00000. This enables you to have pure focus over your work.</p>
+                    <a href="https://chromewebstore.google.com/detail/ldlgjnhpoongfdknhbnlfinobgakpbej?utm_source=item-share-cb" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center" target="_blank" rel="noopener noreferrer">
+                        Get Now
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 rounded-t-lg">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-gray-400">&copy; 2025 Optic Flow Studios. All rights reserved.</p>
+            <p class="text-gray-400 mt-2">Developed with passion by James Theakston.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
