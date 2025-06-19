@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy for Visual Finder Chrome Extension</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+        h1 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.75rem; /* text-3xl */
+            font-weight: 600; /* font-semibold */
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .last-updated {
+            text-align: right;
+            margin-top: 2rem;
+            font-size: 0.875rem; /* text-sm */
+            color: #777;
+            padding-top: 1rem;
+            border-top: 1px dashed #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Visual Finder Chrome Extension</h1>
+
+        <p>This Privacy Policy describes how the Visual Finder Chrome Extension ("the Extension") collects, uses, and shares information when you use it. Your privacy is very important to us.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>The Visual Finder Extension collects information directly related to its core functionality:</p>
+        <ul>
+            <li><strong>User Queries:</strong> When you type a query into the Extension's input field and initiate a search, this query is sent to the Google Gemini API to generate relevant website suggestions.</li>
+            <li><strong>Visited URLs (for processing):</strong> To provide titles and summaries, the Extension's background service worker temporarily fetches the HTML content of the suggested URLs. This content is processed <em>on your device</em> within the Extension's isolated environment.</li>
+        </ul>
+        <p><strong>We do not collect any personally identifiable information (PII) such as your name, email address, IP address, or browsing history outside of the direct requests you make through the Extension.</strong></p>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>The information collected by the Extension is used solely for the following purposes:</p>
+        <ul>
+            <li><strong>To Fulfill Your Request:</strong> Your search queries are used to generate relevant website links and summaries via the Google Gemini API.</li>
+            <li><strong>To Enhance Results:</strong> The content of the suggested web pages is fetched to extract titles and generate concise summaries, improving the utility of the search results.</li>
+            <li><strong>To Store Your Preferences:</strong> Your filter settings (e.g., allowing Google/YouTube links, blocked domains) are saved locally on your device using Chrome's <code>chrome.storage.local</code> API, so they persist between sessions.</li>
+        </ul>
+
+        <h2>3. Information Sharing</h2>
+        <ul>
+            <li><strong>Google Gemini API:</strong> Your search queries and the <em>text content extracted from websites for summarization</em> are sent to the Google Gemini API for processing. This is necessary for the AI functionality of the Extension. Google's privacy policy applies to the data processed by the Gemini API.</li>
+            <li><strong>No Other Third-Party Sharing:</strong> We do not share any other collected information with third parties.</li>
+            <li><strong>No Sale of Data:</strong> We do not sell or rent your data.</li>
+        </ul>
+
+        <h2>4. Data Storage</h2>
+        <ul>
+            <li><strong>Local Storage:</strong> All your personal preferences and settings (e.g., filter preferences, blocked domains) are stored <strong>locally on your device</strong> using Chrome's built-in <code>chrome.storage.local</code> API. This data is not transmitted to our servers or any external databases.</li>
+            <li><strong>Temporary Processing:</strong> Website content fetched for summarization is processed temporarily in the Extension's background service worker and is not stored persistently by the Extension.</li>
+            <li><strong>No Server-Side Storage:</strong> The Visual Finder Extension does not operate any backend servers that store your queries, visited URLs, or any personal data.</li>
+        </ul>
+
+        <h2>5. Security</h2>
+        <p>We are committed to protecting the security of your information. Since most data processing occurs locally within your browser, the primary security measures are those provided by the Chrome browser and the inherent privacy safeguards of the <code>chrome.storage.local</code> API. When communicating with the Gemini API, standard secure protocols (HTTPS) are used.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or the Extension's data practices, please contact us. (You can replace this with specific contact information or a method if desired, e.g., an email address or a support page).</p>
+
+        <p class="last-updated"><strong>Last updated:</strong> June 19, 2025</p>
+    </div>
+</body>
+</html>
